@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Dashboard</title>
+</head>
+
+<body>
+    <header>
+        <h1>Admin Dashboard</h1>
+    </header>
+
+    <nav aria-label="Admin navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#" tabindex="0">User Management</a></li>
+            <li><a href="#" tabindex="0">Site Settings</a></li>
+            <li><a href="#" tabindex="0">Reports</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section aria-labelledby="user-section">
+            <h2 id="user-section">Manage Users</h2>
+            <table aria-label="User list" border="1">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Role</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Alice</td>
+                        <td>Editor</td>
+                        <td>Active</td>
+                    </tr>
+                    <tr>
+                        <td>Bob</td>
+                        <td>Visitor</td>
+                        <td>Pending</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <br>
+
+        <section aria-labelledby="admin-form">
+            <h2 id="admin-form">Add New User</h2>
+            <form aria-label="Add user form">
+                <fieldset>
+                    <legend>Step 1: Account Info</legend>
+                    <label for="username">Username:</label><br>
+                    <input id="username" name="username" type="text" tabindex="0" required="true"><br><br>
+
+                    <label for="email">Email:</label><br>
+                    <input id="email" name="email" type="email" tabindex="0" required="true"><br>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Step 2: Role</legend>
+                    <label for="role">Role:</label><br>
+                    <select id="role" name="role" tabindex="0">
+                        <option>Admin</option>
+                        <option>Editor</option>
+                        <option>Visitor</option>
+                    </select><br><br>
+
+                    <input type="submit" value="Create User" tabindex="0">
+                </fieldset>
+            </form>
+        </section>
+
+        <br>
+
+       
+    </main>
+
+    <details>
+        <summary tabindex="0">Switch Role</summary>
+        <p><a href="editor.html" tabindex="0">Go to Editor</a></p>
+        <p><a href="visitor.html" tabindex="0">Go to Visitor</a></p>
+    </details>
+    <hr>
+    <footer>
+        <p>&copy; 2025 Web Portal. All Rights Reserved.</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editor Dashboard</title>
+</head>
+
+<body>
+    <header>
+        <h1>Editor Dashboard</h1>
+    </header>
+    
+    <nav aria-label="Admin navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#" tabindex="0">Edit Articles</a></li>
+            <li><a href="#" tabindex="0">Add new Articles</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2 tabindex="0">Edit Article</h2>
+            <form aria-label="Article Form">
+                <fieldset>
+                    <legend>Step 1: Basic Info</legend>
+                    <label>
+                        Title: <input type="text" required="true" />
+                    </label>
+                    <br />
+                    <label>
+                        Category:
+                        <select aria-required="true">
+                            <option>News</option>
+                            <option>Blog</option>
+                        </select>
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend>Step 2: Content</legend>
+                    <label>
+                        Body: <textarea rows="5" cols="30"></textarea>
+                    </label>
+                </fieldset>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+    <br>
+    <details>
+        <summary tabindex="0">Switch Role</summary>
+        <p><a href="admin.html" tabindex="0">Go to Admin</a></p>
+        <p><a href="visitor.html" tabindex="0">Go to Visitor</a></p>
+    </details>
+
+    <br>
+    <hr>
+    <footer role="contentinfo" aria-label="Page Footer">
+        <p tabindex="0">&copy; 2025 Web Portal. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

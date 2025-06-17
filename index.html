@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multi-Role Web Portal</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+
+        nav a {
+            color: white;
+            margin-right: 1em;
+            text-decoration: none;
+        }
+
+        section {
+            padding: 1em;
+            border-bottom: 1px solid #ccc;
+        }
+
+       
+
+        fieldset {
+            margin-bottom: 1em;
+            padding-top: 1em;
+            padding-bottom: 1em;
+        }
+
+        details {
+            margin-top: 1em;
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+    <header>
+        <h1 tabindex="0">Multi-Role Dashboard</h1>
+        <p aria-live="polite">Please select a Role</p>
+    </header>
+
+
+
+    <!-- Role Switching -->
+    <section aria-label="Role Switcher">
+        <details>
+            <summary aria-controls="admin-dashboard" aria-expanded="false">Admin</summary>
+                
+            <article id="admin-dashboard">
+               <a href="admin.html">view Admin section</a>
+
+               
+        </details>
+
+        <details>
+            <summary aria-controls="editor-dashboard" aria-expanded="false">Editor</summary>
+            <article id="editor-dashboard">
+                <a href="editor.html">view editor section</a>
+                
+            </article>
+        </details>
+
+        <details>
+            <summary aria-controls="visitor-dashboard" aria-expanded="false">Visitor</summary>
+            <article id="visitor-dashboard">
+                <a href="visitor.html">view visitor section</a>
+            </article>
+        </details>
+    </section>
+
+
+    <footer role="contentinfo" aria-label="Page Footer">
+        <p tabindex="0">&copy; 2025 Web Portal. All Rights Reserved.</p>
+    </footer>
+
+</body>
+
+</html>
